@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfApplication2" x:Class="WpfApplication2.MainWindow"
+        Title="MainWindow" Height="1200" Width="1335" Foreground="{x:Null}" Background="#FFC8C8C8">
+
+    <Grid x:Name="mainGrid"  Width="1335" >
+
+        <Button x:Name="addBtn"   Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70"  Click="Button_Click_1"  BorderBrush="Black" Height="23" Margin="0,33,0,0" />
+        <Canvas x:Name="canvas" Width="1275" Margin="75,4,5,0"  >            
+        </Canvas>
+        <TextBox x:Name="keyInput" HorizontalAlignment="Left" Height="24" Margin="0,82,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="70"  KeyDown="keyInput_KeyDown"/>
+        <Label Content="Key" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="0,56,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button x:Name="clearBtn"   Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70"   BorderBrush="Black" Height="23" Margin="0,119,0,0" Click="clearBtn_Click" />
+        <Label Content="Search" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="0,147,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="searchInput" HorizontalAlignment="Left" Height="24" Margin="0,178,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="70"  />
+        <Button x:Name="searchBtn"   Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70"   BorderBrush="Black" Height="23" Margin="0,207,0,0" Click="searchBtn_Click" />
+        <Button  x:Name="joinBtn" Content="Join" HorizontalAlignment="Left" Margin="0,270,0,0" VerticalAlignment="Top" Width="70" Click="joinBtn_Click"/>
+        <Button  x:Name="doneBtn" Content="Done" HorizontalAlignment="Left" Margin="0,295,0,0" VerticalAlignment="Top" Width="70" Click="doneBtn_Click"/>
+        <Button  x:Name="helpBtn" Content="About" HorizontalAlignment="Left" Margin="0,359,0,0" VerticalAlignment="Top" Width="70" Click="helpBtn_Click" />
+    </Grid>
+</Window>
